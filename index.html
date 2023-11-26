@@ -213,6 +213,15 @@
     <footer>
         <div class="container">
             <div class="row">
+                <div class="col-sm-12 hit-counter">
+                    <span>Views:</span>
+                    <span id="hit-counter"></span>
+                    &nbsp;&nbsp;
+                    <span>Last Viewed On:</span>
+                    <span id="last-viewed-on"></span>
+                </div>
+            </div>
+            <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
                         Copyright &copy; <span id="current-year">2022</span> by Thi Vo Thanh
@@ -251,6 +260,8 @@
     <!-- End footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
     <script src="js/scripts.min.js"></script>
 </body>
 
