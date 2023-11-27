@@ -510,6 +510,24 @@ footer {
     }
 }
 
+.company-info {
+    display: flex;
+    column-gap: 2%;
+    flex-wrap: wrap;
+    img {
+        width: 100%;
+    }
+    .experience-detail {
+        padding-left: 13px;
+    }
+    .company-left-item {
+        flex: 20%;
+    }
+    .company-right-item {
+        flex: 78%;
+    }
+}
+
 .vtimeline-content {
     margin-left: 350px;
     background: #fff;
@@ -982,7 +1000,6 @@ footer {
     .social {
         text-align: center;
     }
-
 }
 
 // Extra Small Devices
@@ -1002,5 +1019,14 @@ footer {
             padding: 5px 10px;
         }
     }
-
+    .company-info {
+        .company-left-item, .company-right-item {
+            flex: 100%
+        }
+        .company-left-item {
+            img {
+                width: 120px;
+            }
+        }
+    }
 }
