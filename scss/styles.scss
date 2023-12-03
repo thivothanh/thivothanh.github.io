@@ -353,7 +353,7 @@ footer {
 #lead {
     position: relative;
     height: 100vh;
-    min-height: 500px;
+    min-height: 692px;
     max-height: 1080px;
     background: url(../images/lead-bg.jpg);
     background-size: cover;
@@ -361,10 +361,25 @@ footer {
     overflow: hidden;
 }
 
+$avatar-size: 300px;
+.lead-avatar {
+    z-index: 2;
+    position: absolute;
+    top: calc(100% / 3);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    img {
+        height: $avatar-size;
+        width: $avatar-size;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
+
 #lead-content {
     position: absolute;
     z-index: 10;
-    top: 50%;
+    top: calc(100% / 3 * 2);
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -903,6 +918,20 @@ footer {
         padding: 100px 15px;
     }
 
+    .lead-avatar {
+        position: relative;
+        transform: none;
+        left: auto;
+        top: auto;
+        img {
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+            width: calc(#{$avatar-size} * 0.9);
+            height: calc(#{$avatar-size} * 0.9);
+        }
+    }
+
     #lead-content {
         position: relative;
         transform: none;
@@ -957,6 +986,13 @@ footer {
         }
     }
 
+    .lead-avatar {
+        img {
+            width: calc(#{$avatar-size} * 0.8);
+            height: calc(#{$avatar-size} * 0.8);
+        }
+    }
+
     #lead-content {
         h1 {
             font-size: 2em;
@@ -1004,6 +1040,13 @@ footer {
 
 // Extra Small Devices
 @media only screen and (max-width : 480px) {
+
+    .lead-avatar {
+        img {
+            width: calc(#{$avatar-size} * 0.7);
+            height: calc(#{$avatar-size} * 0.7);
+        }
+    }
 
     #lead-content {
         h1 {
